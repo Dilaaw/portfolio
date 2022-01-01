@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Puppies+Play&family=Roboto:wght@100&display=swap');
 
 body{
-    background: url("https://applemagazine.com/wp-content/uploads/2020/09/AppleMagazine-iPad-Air-Wallpaper-2020-4.png");
+    margin: 0;
+    padding: 0;
+    background: #191627;
+    /* background: url("https://applemagazine.com/wp-content/uploads/2020/09/AppleMagazine-iPad-Air-Wallpaper-2020-4.png"); */
     background-size: cover;
     background-position: center;
     font-family: 'Roboto', sans-serif;
@@ -11,13 +14,18 @@ body{
 
 
 .navbar{
-    max-width: 1280px;
+    background: #191627;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /* max-width: 1280px; */
     padding: 0 24px;
     margin: auto;
     align-items: center;
     display: flex;
 }
 .logo{
+    margin-left: 4%;
     font-weight: 700;
     font-size: 3rem;
     font-family: 'Puppies Play', cursive;
@@ -27,12 +35,13 @@ body{
     align-items: center;
     justify-content: flex-start;
     margin-left: 20%;
-    gap: 24px;
+    /* gap: 24px; */
 }
 .navbar li{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 15px;
 }
 .navbar a{
     text-decoration: none;
@@ -50,7 +59,7 @@ body{
 .navbar a:hover::after{
     transform: scale(1);
 }
-.language{
+/* .language{
     border-radius: 40px;
     background: linear-gradient(90deg,#0162c8,#55e7fc);
     display: inline-block;
@@ -61,12 +70,12 @@ body{
     text-align: center;
     text-transform: uppercase;
     margin-left: 300px;
-}
+} */
 .navbar-mobile{
     display: none;
 }
 
-@media screen and (max-width: 1127px) {
+/* @media screen and (max-width: 1127px) {
     .navbar{
         display: none;
     }
@@ -84,7 +93,7 @@ body{
         font-size: 3rem;
         font-family: 'Puppies Play', cursive;
     }
-}
+} */
 
 /* Main */
 .home{
@@ -124,6 +133,9 @@ body{
 } */
 
 .flex{
+    background: url("https://applemagazine.com/wp-content/uploads/2020/09/AppleMagazine-iPad-Air-Wallpaper-2020-4.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
     padding: 2px;
