@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Puppies+Play&family=Roboto:wght@100&display=swap');
+
+body{
+    background: url("https://applemagazine.com/wp-content/uploads/2020/09/AppleMagazine-iPad-Air-Wallpaper-2020-4.png");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+.navbar{
+    max-width: 1280px;
+    padding: 0 24px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Puppies Play', cursive;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20%;
+    gap: 24px;
+}
+.navbar li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+.navbar a:hover::after{
+    transform: scale(1);
+}
+.language{
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 36px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 300px;
+}
+.navbar-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1127px) {
+    .navbar{
+        display: none;
+    }
+    .navbar-mobile{
+        display: flex;
+    }
+    .navbar-mobile i{
+        cursor: pointer;
+        margin-top: 15px;
+        margin-left: 25%;
+    }
+    .navbar-mobile .logo{
+        margin-left: 40%;
+        font-weight: 700;
+        font-size: 3rem;
+        font-family: 'Puppies Play', cursive;
+    }
+}
+
+/* Main */
+.home{
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+    margin-top: 50px;
+    margin-left: 16%;
+    /* padding: 50px; */
+}
+
+.social-icon{
+    font-size: 1.25rem;
+    color: white;
+}
+
+.social-icon:hover{
+    color: #ecf0f1;
+}
+/* .navbar a{
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 36px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 300px;
+} */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width : 500px;
+    height : 300px;
+    margin : 3% auto;
+    overflow: hidden;
+}
+
+.glass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.container h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    /* margin-bottom: 38%; */
+}
+
+.container a{
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 36px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 30%;
+    margin-left: 30%;
+    /* margin-bottom: 60%; */
+}
+
+.container img{
+    position: center;
+    width: 60%;
+    text-align: center;
+    /* margin-bottom: 30%; */
+    margin-left: auto;
+    margin-right: auto;
+}
