@@ -63,24 +63,6 @@ body{
     box-sizing: border-box;
     cursor: pointer;
 }
-@media screen and (max-width: 991px) {
-    .deroulant{
-        display: block;
-    }
-    .logo{
-        width: 100%;
-        text-align: center;
-        display: block;
-        font-weight: 700;
-        font-size: 2.2rem;
-    }
-    .navbar{
-        height: 10%;
-    }
-    .navbar li{
-        display: none;
-    }
-}
 
 
 /* Main */
@@ -125,7 +107,6 @@ body{
 }
 .presentation{
     display: grid;
-    /* grid-template-columns: max-content; */
     row-gap: 0.5em;
     margin-top: 50px;
     margin-left: 5%;
@@ -228,4 +209,24 @@ body{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 991px) {
+    .deroulant{
+        display: block;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-weight: 700;
+        font-size: 2.2rem;
+    }
+    .navbar{
+        height: 10%;
+    }
+    .navbar li{
+        display: none;
+    }
 }
