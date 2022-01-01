@@ -74,6 +74,9 @@ body{
         font-weight: 700;
         font-size: 2.2rem;
     }
+    .navbar{
+        height: 10%;
+    }
     .navbar li{
         display: none;
     }
