@@ -25,7 +25,7 @@ body{
     display: flex;
 }
 .logo{
-    margin-left: 4%;
+    margin-left: 10%;
     font-weight: 700;
     font-size: 3rem;
     font-family: 'Puppies Play', cursive;
@@ -34,7 +34,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 20%;
+    margin-left: 15%;
     /* gap: 24px; */
 }
 .navbar li{
@@ -59,41 +59,28 @@ body{
 .navbar a:hover::after{
     transform: scale(1);
 }
-/* .language{
-    border-radius: 40px;
-    background: linear-gradient(90deg,#0162c8,#55e7fc);
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 36px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    margin-left: 300px;
-} */
-.navbar-mobile{
+.deroulant{
     display: none;
+    background: #191627;
+    box-sizing: border-box;
+    cursor: pointer;
 }
-
-/* @media screen and (max-width: 1127px) {
-    .navbar{
+@media screen and (max-width: 991px) {
+    .deroulant{
+        display: block;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-weight: 700;
+        font-size: 2.2rem;
+    }
+    .navbar li{
         display: none;
     }
-    .navbar-mobile{
-        display: flex;
-    }
-    .navbar-mobile i{
-        cursor: pointer;
-        margin-top: 15px;
-        margin-left: 25%;
-    }
-    .navbar-mobile .logo{
-        margin-left: 40%;
-        font-weight: 700;
-        font-size: 3rem;
-        font-family: 'Puppies Play', cursive;
-    }
-} */
+}
+
 
 /* Main */
 .home{
@@ -108,7 +95,6 @@ body{
     row-gap: 1rem;
     margin-top: 50px;
     margin-left: 16%;
-    /* padding: 50px; */
 }
 
 .social-icon{
@@ -119,19 +105,30 @@ body{
 .social-icon:hover{
     color: #ecf0f1;
 }
-/* .navbar a{
-    border-radius: 40px;
-    background: linear-gradient(90deg,#0162c8,#55e7fc);
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 36px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    margin-left: 300px;
-} */
+.home__img{
+    display: grid;
+}
+.home__blob{
+    width: 200px;
+    fill: purple;
+}
+.home__blob-img{
+    width: 170px;
+}
 
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: #575fcf;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #485460;
+    border-radius: .5rem;
+}
+
+/* Cards */
 .flex{
     background: url("https://applemagazine.com/wp-content/uploads/2020/09/AppleMagazine-iPad-Air-Wallpaper-2020-4.png");
     background-size: cover;
