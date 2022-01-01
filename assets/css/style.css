@@ -86,7 +86,7 @@ body{
 /* Main */
 .home{
     grid-template-columns: .5fr 3fr;
-    padding-top: 3.5rem;
+    padding-top: 8rem;
     align-items: center;
     width: 100%;
     display: flex;
@@ -142,6 +142,19 @@ body{
 .resume{
     display: flex;
     color: #a5b1c2;
+}
+.presentation a{
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+    display: flex;
+    text-decoration: none;
+    padding: 12px 36px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: auto;
 }
 /* Scrollbar */
 ::-webkit-scrollbar{
