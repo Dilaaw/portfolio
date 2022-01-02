@@ -73,7 +73,7 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 25%;
+    margin-bottom: 8%;
     margin-right: 20%;
     justify-content: center;
 }
@@ -229,12 +229,16 @@ body{
     .navbar li{
         display: none;
     }
+    .home{
+        padding-top: 2rem;
+    }
 }
 
 /* Scroll A propos */
 .scroll-down{
-    position: absolute;
-    bottom: 5rem;
+    /* position: absolute; */
+    margin-bottom: 20%;
+    /* bottom: 5rem; */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
