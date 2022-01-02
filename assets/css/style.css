@@ -150,10 +150,23 @@ body{
 }
 
 /* Cards */
-.flex{
+/* PROJETS */
+.projets{
     background: url("https://applemagazine.com/wp-content/uploads/2020/09/AppleMagazine-iPad-Air-Wallpaper-2020-4.png");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+.projets h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex{
+    /* background: url("https://applemagazine.com/wp-content/uploads/2020/09/AppleMagazine-iPad-Air-Wallpaper-2020-4.png");
+    background-size: cover;
+    background-position: center; */
     display: flex;
     flex-wrap: wrap;
     padding: 2px;
@@ -165,7 +178,7 @@ body{
     flex-direction: column;
     justify-content: center;
     width : 500px;
-    height : 300px;
+    height : 500px;
     margin : 3% auto;
     overflow: hidden;
 }
@@ -194,7 +207,7 @@ body{
     display: inline-block;
     text-decoration: none;
     padding: 12px 36px;
-    margin: 10px 0;
+    margin: 10%;
     font-size: 14px;
     color: white;
     text-align: center;
@@ -207,12 +220,22 @@ a span{
 }
 .container img{
     position: center;
-    width: 60%;
+    width: 80%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-
+.explication, .annee{
+    margin: 2%;
+    text-align: center;
+}
+.explication{
+    font-weight: 600;
+}
+.annee{
+    font-size: 1.5em;
+    font-weight: 900;
+}
 
 /* Scroll A propos */
 .scroll-down{
@@ -283,9 +306,6 @@ a span{
     display: grid;
     flex-wrap: wrap;
     margin-bottom: 10%;
-    /* text-align: center; */
-    /* margin-left: 25%;
-    margin-right: 25%; */
 }
 .a-propos h1,.competences h1,.title{
     text-align: center;
@@ -360,6 +380,7 @@ a span{
     text-decoration: none;
     font-size: 2.5em;
 }
+
 /* RESPONSIVE */
 @media screen and (max-width: 991px) {
     .deroulant{
