@@ -307,7 +307,7 @@ a span{
     flex-wrap: wrap;
     margin-bottom: 10%;
 }
-.a-propos h1,.competences h1,.title{
+.a-propos h1,.competences h1,.title, .contact h1{
     text-align: center;
     text-decoration: overline;
     text-transform: uppercase;
@@ -363,6 +363,9 @@ a span{
 }
 
 /* COMPETENCES */
+.competences{
+    margin-bottom: 8%;
+}
 .competences-logo{
     display: grid;
     flex-wrap: wrap;
@@ -379,6 +382,16 @@ a span{
 .competences-logo h1{
     text-decoration: none;
     font-size: 2.5em;
+}
+
+/* CONTACT */
+
+
+
+/* FOOTER */
+footer{
+    text-align: center;
+    margin: 2%;
 }
 
 /* RESPONSIVE */
@@ -402,7 +415,7 @@ a span{
     .home{
         padding-top: 2rem;
     }
-    .scroll-down, .a-propos{
+    .scroll-down, .a-propos, .competences{
         margin-bottom: 20%;
     }
     .a-propos h1, .competences h1,.title{
