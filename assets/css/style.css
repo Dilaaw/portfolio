@@ -102,8 +102,8 @@ body{
     fill: grey;
 }
 .home__blob-img{
-    width: 160px;
-    
+    width: 170px;
+    align-items: center;
 }
 .presentation{
     display: grid;
@@ -231,7 +231,7 @@ body{
     }
 }
 
-
+/* Scroll A propos */
 .scroll-down{
     position: absolute;
     bottom: 5rem;
