@@ -420,7 +420,27 @@ footer{
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1600px) {
+    .grid-resume{
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .grid-resume{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .grid-resume{
+        font-size: 9.6px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .grid-resume{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 1012px) {
     .deroulant{
         display: block;
     }
@@ -465,5 +485,8 @@ footer{
         flex-wrap: wrap;
         overflow: hidden;
         margin-left: 1%;
+    }
+    .grid-resume{
+        font-size: 1em;
     }
 }
