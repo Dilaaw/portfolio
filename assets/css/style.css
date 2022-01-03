@@ -385,6 +385,9 @@ a span{
 }
 
 /* CONTACT */
+.projets{
+    margin-bottom: 5%;
+}
 .contact h1{
     margin-bottom: 10%;
 }
@@ -437,7 +440,7 @@ footer{
     .home{
         padding-top: 2rem;
     }
-    .scroll-down, .a-propos, .competences{
+    .scroll-down, .a-propos, .competences, .projets{
         margin-bottom: 20%;
     }
     .a-propos h1, .competences h1,.title{
@@ -456,5 +459,11 @@ footer{
     }
     .contact img{
         width: 10px;
+    }
+    .contact-localisation{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        margin-left: 1%;
     }
 }
